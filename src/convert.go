@@ -1,9 +1,13 @@
 package main
 
+import (
+	"math"
+)
+
 func radiansToDegrees(radians float32) float32 {
-	return (radians * 180) / 3.14159265358979
+	return (radians * 180) / math.Pi
 }
 
 func degreesToRadians(degrees float32) float32 {
-	return (degrees * 3.14159265358979) / 180
+	return (degrees * math.Pi) / 180
 }
