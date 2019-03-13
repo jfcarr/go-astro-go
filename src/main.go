@@ -18,7 +18,7 @@ func main() {
 	fmt.Printf("Right Ascension is %.2f, Declination is %.2f\n", mySkyObject.RightAscension, mySkyObject.Declination)
 
 	var degrees float32 = 180
-	var radians float32 = 3.14159
+	var radians float32 = 1
 	fmt.Printf("%.2f degrees is %.2f radians\n", degrees, degreesToRadians(degrees))
 	fmt.Printf("%.2f radians is %.2f degrees\n", radians, radiansToDegrees(radians))
 }
