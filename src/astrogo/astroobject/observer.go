@@ -1,4 +1,4 @@
-package observer
+package astroobject
 
 // Observer  Information about an observer.
 type Observer struct {
