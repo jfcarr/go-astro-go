@@ -1,4 +1,4 @@
-package astroutil
+package util
 
 import (
 	"math"

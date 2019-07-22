@@ -1,4 +1,4 @@
-package astroobject
+package object
 
 // SkyObject  Information about an object in the sky.
 type SkyObject struct {

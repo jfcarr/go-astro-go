@@ -1,14 +1,14 @@
 package main
 
 import (
-	"./astrogo/astroobject"
-	"./astrogo/astroutil"
+	agobj "./astrogo/object"
+	agutil "./astrogo/util"
 	"fmt"
 )
 
 func main() {
-	var myObserver astroobject.Observer
-	var mySkyObject astroobject.SkyObject
+	var myObserver agobj.Observer
+	var mySkyObject agobj.SkyObject
 
 	myObserver.SetLatitude(52, 30, "N")
 	myObserver.SetLongitude(1, 55, "W")
@@ -22,6 +22,6 @@ func main() {
 	var degrees float32 = 180
 	var radians float32 = 1
 
-	fmt.Printf("%.2f degrees is %.2f radians\n", degrees, astroutil.DegreesToRadians(degrees))
-	fmt.Printf("%.2f radians is %.2f degrees\n", radians, astroutil.RadiansToDegrees(radians))
+	fmt.Printf("%.2f degrees is %.2f radians\n", degrees, agutil.DegreesToRadians(degrees))
+	fmt.Printf("%.2f radians is %.2f degrees\n", radians, agutil.RadiansToDegrees(radians))
 }
